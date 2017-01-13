@@ -8,6 +8,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <provider
+            android:name="si.alkimisticus.easybutterflyrecorder.db.DataProvider"
+            android:authorities="si.alkimisticus.easybutterflyrecorder.provider"
+            android:exported="false"
+            android:label="Insect recorder database"
+            />
+
         <activity
             android:name=".RecordingActivity"
             android:label="@string/app_name">
