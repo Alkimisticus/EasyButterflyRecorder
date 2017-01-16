@@ -29,4 +29,16 @@ public final class InsectRecorderContract {
 
     static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + SpeciesEntry.TABLE_NAME;
+
+
+    public static final String[] PROJECTION = new String[]{
+            SpeciesEntry.TABLE_NAME+"."+SpeciesEntry.COLUMN_NAME_COMMON_NAME,
+            SpeciesEntry.TABLE_NAME+"."+SpeciesEntry.COLUMN_NAME_LATIN_NAME,
+            SpeciesEntry.TABLE_NAME+"."+SpeciesEntry.COLUMN_NAME_COMMON_FAMILY_NAME,
+            SpeciesEntry.TABLE_NAME+"."+SpeciesEntry.COLUMN_NAME_LATIN_FAMILY_NAME
+    };
+
+
+
+
 }

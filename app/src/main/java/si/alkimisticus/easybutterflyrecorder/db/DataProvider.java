@@ -18,8 +18,9 @@ public class DataProvider extends ContentProvider {
     // Creates a UriMatcher object.
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
-    private static final String AUTHORITY = "si.alkimisticus.easybutterflyrecorder.provider";
+    public static final String AUTHORITY = "si.alkimisticus.easybutterflyrecorder.provider";
     private InsectRecorderDbHelper dbHelper;
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + AUTHORITY);
 
     static {
         /*
